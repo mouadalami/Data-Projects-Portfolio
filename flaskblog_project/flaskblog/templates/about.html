@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>
+        {% if title %}
+            Welcome to My Flask App - {{ title }}
+        {% else %}
+            Welcome to My Flask App
+        {% endif %}
+    </h1>
+    <p>Learn more about our mission and values.</p>
+{% endblock %}
