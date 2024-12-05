@@ -10,11 +10,11 @@ This GitHub repository showcases the projects I've been working on as part of my
 - **Learn continuously** about the tools and technologies driving today's data revolution.
 
 ### Current & Completed Projects:
-- **[CRM Data Analysis Case](https://github.com/mouadalami)** *(Completed)*:
+- **[CRM Data Analysis Case]([https://github.com/mouadalami](https://github.com/mouadalami/Data-Projects-Portfolio/tree/main/iFood-CRM-Data-Analytics-Case))** *(Completed)*:
   - Developed customer segmentation models and predictive analytics for targeted marketing strategies.
   - Delivered actionable insights in professional reports and visualizations.
 
-- **[Flask Blog Application](https://github.com/mouadalami)** *(In Progress)*:
+- **[Flask Blog Application]([https://github.com/mouadalami](https://github.com/mouadalami/Data-Projects-Portfolio/tree/main/flaskblog_project))** *(In Progress)*:
   - Building a web application to strengthen my expertise in **Python**, **Flask**, and **web development**.
   - Features include user authentication, profile management, and dynamic content creation.
 
