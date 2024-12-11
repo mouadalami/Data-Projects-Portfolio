@@ -1,66 +1,20 @@
-INSERT INTO ssp_details (ssp_id, ssp_name, marketplace_segment, region) VALUES
-(1,  'OpenX',          'brand_safe', 'US'),
-(2,  'AppNexus',       'premium',    'US'),
-(3,  'Pubmatic',       'brand_safe', 'EU'),
-(4,  'Rubicon',        'long_tail',  'US'),
-(5,  'IndexExchange',  'premium',    'EU'),
-(6,  'Magnite',        'brand_safe', 'US'),
-(7,  'Teads',          'premium',    'APAC'),
-(8,  'TripleLift',     'long_tail',  'US'),
-(9,  'YieldMo',        'brand_safe', 'EU'),
-(10, 'Sovrn',          'long_tail',  'APAC'),
-(11, 'Zedo',           'long_tail',  'US'),
-(12, 'OpenRTB',        'premium',    'APAC'),
-(13, 'SmartAdServer',  'brand_safe', 'EU'),
-(14, 'Criteo',         'premium',    'US'),
-(15, 'Adform',         'brand_safe', 'EU'),
-(16, 'RhythmOne',      'long_tail',  'EU'),
-(17, 'ImproveDigital', 'premium',    'APAC'),
-(18, 'Bidswitch',      'brand_safe', 'US'),
-(19, 'GoogleAdX',      'premium',    'US'),
-(20, 'Ezoic',          'long_tail',  'APAC');
-
-INSERT INTO campaigns (campaign_id, advertiser_id, vertical, daily_budget, start_date, end_date) VALUES
-(1,  101, 'retail',     500.00, DATE '2024-11-01', DATE '2024-12-31'),
-(2,  102, 'automotive', 300.00, DATE '2024-11-05', DATE '2024-11-30'),
-(3,  103, 'finance',    400.00, DATE '2024-11-01', DATE '2024-12-31'),
-(4,  104, 'retail',     250.00, DATE '2024-11-01', DATE '2024-11-15'),
-(5,  105, 'automotive', 600.00, DATE '2024-11-10', DATE '2024-12-10'),
-(6,  106, 'finance',    350.00, DATE '2024-11-01', DATE '2024-11-20'),
-(7,  107, 'retail',     450.00, DATE '2024-11-03', DATE '2024-11-25'),
-(8,  108, 'automotive', 200.00, DATE '2024-11-02', DATE '2024-11-30'),
-(9,  109, 'finance',    380.00, DATE '2024-11-05', DATE '2024-11-30'),
-(10, 110, 'retail',     500.00, DATE '2024-11-01', DATE '2024-12-31'),
-(11, 111, 'automotive', 100.00, DATE '2024-11-10', DATE '2024-12-05'),
-(12, 112, 'finance',    410.00, DATE '2024-11-01', DATE '2024-11-10'),
-(13, 113, 'retail',     275.00, DATE '2024-11-01', DATE '2024-11-15'),
-(14, 114, 'automotive', 330.00, DATE '2024-11-05', DATE '2024-11-30'),
-(15, 115, 'finance',    420.00, DATE '2024-11-01', DATE '2024-12-31'),
-(16, 116, 'retail',     260.00, DATE '2024-11-01', DATE '2024-11-15'),
-(17, 117, 'automotive', 610.00, DATE '2024-11-10', DATE '2024-12-10'),
-(18, 118, 'finance',    360.00, DATE '2024-11-01', DATE '2024-11-20'),
-(19, 119, 'retail',     470.00, DATE '2024-11-03', DATE '2024-11-25'),
-(20, 120, 'automotive', 210.00, DATE '2024-11-02', DATE '2024-11-30');
-
-INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES
-(DATE '2024-11-01', 1,  1,  10000, 100, 200.00, 5),
-(DATE '2024-11-01', 1,  2,   8000,  80, 160.00, 4),
-(DATE '2024-11-01', 2,  1,  12000,  90, 250.00, 6),
-(DATE '2024-11-02', 1,  3,   5000,  50, 100.00, 2),
-(DATE '2024-11-02', 3,  2,  11000, 110, 300.00, 7),
-(DATE '2024-11-02', 3,  4,   7000,  70, 140.00, 3),
-(DATE '2024-11-03', 1,  5,   9000,  95, 180.00, 4),
-(DATE '2024-11-03', 4,  1,   4000,  40,  80.00, 1),
-(DATE '2024-11-03', 5,  2,  15000, 120, 320.00, 8),
-(DATE '2024-11-04', 5,  3,   6000,  60, 120.00, 3),
-(DATE '2024-11-04', 5,  6,   2000,  25,  50.00, 1),
-(DATE '2024-11-04', 2,  1,  13000, 100, 270.00, 5),
-(DATE '2024-11-05', 3,  2,  10000, 105, 290.00, 6),
-(DATE '2024-11-05', 3,  5,   9000,  85, 190.00, 5),
-(DATE '2024-11-05', 1,  1,   8000,  90, 160.00, 4),
-(DATE '2024-11-05', 5, 10,  11000, 130, 350.00, 9),
-(DATE '2024-11-01', 10,20,   5000,  45, 100.00, 2),
-(DATE '2024-11-02', 10,19,   7000,  70, 140.00, 3),
-(DATE '2024-11-03', 10,18,   6000,  65, 130.00, 3),
-(DATE '2024-11-04', 10, 1,   8000,  90, 190.00, 4);
-
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-01', 1,  1,  10000, 100, 200.00, 5);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-01', 1,  2,   8000,  80, 160.00, 4);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-01', 2,  1,  12000,  90, 250.00, 6);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-02', 1,  3,   5000,  50, 100.00, 2);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-02', 3,  2,  11000, 110, 300.00, 7);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-02', 3,  4,   7000,  70, 140.00, 3);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-03', 1,  5,   9000,  95, 180.00, 4);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-03', 4,  1,   4000,  40,  80.00, 1);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-03', 5,  2,  15000, 120, 320.00, 8);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-04', 5,  3,   6000,  60, 120.00, 3);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-04', 5,  6,   2000,  25,  50.00, 1);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-04', 2,  1,  13000, 100, 270.00, 5);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-05', 3,  2,  10000, 105, 290.00, 6);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-05', 3,  5,   9000,  85, 190.00, 5);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-05', 1,  1,   8000,  90, 160.00, 4);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-05', 5, 10,  11000, 130, 350.00, 9);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-01', 10,20,  5000,  45, 100.00, 2);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-02', 10,19,  7000,  70, 140.00, 3);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-03', 10,18,  6000,  65, 130.00, 3);
+INSERT INTO campaign_performance (perf_date, campaign_id, ssp_id, impressions, clicks, spend, conversions) VALUES (DATE '2024-11-04', 10, 1,   8000,  90, 190.00, 4);
