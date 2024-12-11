@@ -1,6 +1,7 @@
 # AdTech SQL Challenges
 
 **Author:** Mouad A
+
 **Assisted by:** [ChatGPT](https://openai.com/) for initial brainstorming and scenario setup
 
 ## Overview
