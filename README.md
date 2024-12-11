@@ -18,7 +18,7 @@ This GitHub repository showcases the projects I've been working on as part of my
   - Building a web application to strengthen my expertise in **Python**, **Flask**, and **web development**.
   - Features include user authentication, profile management, and dynamic content creation.
  
-- **[AdTech SQL Project]** *(In Progress)*:
+- **AdTech SQL Project** *(In Progress)*:
   - Designing and querying a realistic AdTech database to highlight SQL proficiency in a programmatic display advertising scenario.
   - Challenges include complex joins, window functions, and advanced analytics on campaign performance, budget pacing, and conversion metrics.
 
