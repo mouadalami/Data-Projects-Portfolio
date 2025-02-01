@@ -117,6 +117,8 @@ flaskblog_project/
 
 4. Set environment variables for email functionality:
    ```bash
+   export SECRET_KEY="a_secret_key"
+   export SQLALCHEMY_DATABASE_URI="sqlite:///site.db"
    export EMAIL_USER=<your_email>
    export EMAIL_PASS=<your_email_password>
    ```
@@ -138,3 +140,4 @@ flaskblog_project/
 
 ## Author
 This project was developed as a learning exercise in Flask, Python, and web development. For questions or feedback, feel free to reach out!
+
