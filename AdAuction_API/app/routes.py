@@ -65,3 +65,22 @@ def upload_file():
     except Exception as e:
         db.session.rollback()
         return jsonify({"error": f"Error during import: {str(e)}"}), 500
+    
+    @api.route('/ads', methods=['GET'])
+    def get_all_ads():
+        ads = AdAuction.query.all()
+        results = [
+            {
+                "id": ad.id,
+                "date": ad.date.strftime("%Y-%m-%d") if ad.date else None, 
+                "site_id": ad.site_id,
+                "ad_type_id": ad.ad_type_id,
+                "geo_id": ad.geo_id,
+                "device_category_id": ad.device_category_id,
+                "advertiser_id": ad.advertiser_id,
+                "total_impressions": ad.total_impressions,
+                "total_revenue": ad.total_revenue
+            }
+            for ad in ads
+        ]
+        return jsonify(results), 200
